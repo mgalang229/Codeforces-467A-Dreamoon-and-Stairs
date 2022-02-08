@@ -13,7 +13,7 @@ int main() {
 	// we need to find the smallest integer that is 
 	// a multiple of m within the range [n / 2, n]
 	// one way to find the answer:
-	// ceil(x / m) * m, or (x + m - 1) / m * n
+	// ceil(x / m) * m, or (x + m - 1) / m * m
 	int lower_bound = (n + 1) / 2;
 	int ans = (lower_bound + m - 1) / m * m;
 	if (ans > n) {
